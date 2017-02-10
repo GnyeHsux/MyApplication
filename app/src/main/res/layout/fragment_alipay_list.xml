@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--<com.sgu.jack.mypay.ui.mypayview.AccountCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:accountBalanceText="￥ 20.00"
+        app:accountDescText="支付宝"
+        app:accountImg_src="@drawable/ic_action_alipay"
+        app:accountNameText="支付宝 (13580114480)"
+        app:backgroundColor="@color/colorPrimaryDark"
+        app:todaySpendText="￥ 30.00"/>-->
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/window_background" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <!--<com.sgu.jack.mypay.ui.mypayview.TaiJi
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+
+    <RelativeLayout
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/image_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:scaleType="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_empty"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/alipay_empty"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="?attr/colorPrimary"/>
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="75dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_add"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:layout_behavior="com.sgu.jack.mypay.ui.common.ScrollingFABBehavior" />
+</FrameLayout>

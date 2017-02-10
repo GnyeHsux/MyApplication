@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--账户图标-->
+    <integer-array name="account_card_img">
+        <!--支付宝-->
+        <item>@drawable/ic_action_alipay</item>
+        <!--微信支付-->
+        <item>@drawable/ic_action_wechat</item>
+        <!--现金-->
+        <item>@drawable/cash_yuan</item>
+        <!--各类银行卡-->
+        <item>@drawable/ic_action_dashboard</item>
+    </integer-array>
+    <!--账户背景颜色-->
+    <string-array name="account_card_bg_color">
+        <!--支付宝-->
+        <item>#0089cd</item>
+        <!--微信-->
+        <item>#439057</item>
+        <!--现金-->
+        <item>#E91E63</item>
+        <!--银行-->
+        <item>#9C27B0</item>
+    </string-array>
+    <string-array name="account_card_type">
+        <item>支付宝</item>
+        <item>微信</item>
+        <item>现金</item>
+        <item>网络账户</item>
+        <item>储蓄卡</item>
+        <item>信用卡</item>
+    </string-array>
+</resources>

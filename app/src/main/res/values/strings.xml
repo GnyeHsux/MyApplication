@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">MyPay</string>
+    <string name="search">搜索</string>
+    <string name="pay_empty">赶快添加账户吧</string>
+    <string name="alipay_empty">尚无支付宝消费记录</string>
+    <string name="wechat_empty">尚无微信支付记录</string>
+    <string name="pay_list">账户列表</string>
+    <string name="alipay_list">支付宝</string>
+    <string name="wechat_list">微信</string>
+    <string name="statistics">消费趋势</string>
+    <string name="login">登录</string>
+
+
+
+    <!--设置页面-->
+    <string name="action_settings">设置</string>
+    <string name="setting_pattern">手势密码</string>
+    <string name="setting_change_theme">更换主题</string>
+    <string name="setting_about">关于</string>
+    <string name="setting_version">应用版本</string>
+    <string name="setting_author">作者</string>
+    <string name="setting_weibo">新浪微博</string>
+    <string name="pattern_empty">点击设置手势密码</string>
+    <string name="pattern_setted">已设置</string>
+    <string name="input_pattern">请输入手势密码</string>
+    <string name="verify_pattern">请再次验证密码</string>
+    <string name="input_pattern_error">验证失败，请重新输入</string>
+    <string name="input_new_pattern">请输入新手势密码</string>
+    <string name="choice">选择操作</string>
+    <string name="setting_pattern_cancel">取消手势密码</string>
+    <string name="setting_pattern_change">更改手势密码</string>
+
+
+    <!--主题-->
+    <string name="change_theme">更换主题</string>
+    <string name="theme_default">默认</string>
+    <string name="theme_lemon">青柠</string>
+    <string name="strawberry">草莓</string>
+    <string name="starry">星空</string>
+    <string name="morning">破晓</string>
+    <string name="grape">葡萄</string>
+    <string name="burberry">巴宝莉</string>
+
+
+    <!--其他-->
+
+
+
+</resources>

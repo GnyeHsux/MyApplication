@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.sgu.jack.mypay.ui.mypayview.AccountCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/accountcard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/bill_pic"
+        android:layout_width="@dimen/bill_pic"
+        android:layout_height="@dimen/bill_pic"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/empty_bg" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="4"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bill_name"
+            style="@style/textBillName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="投资收益" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bill_date"
+                style="@style/textBillRemark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2月14日"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/bill_remark"
+                style="@style/textBillRemark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="投资收益sfsfs"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bill_count"
+            style="@style/textBillCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥10.00" />
+
+        <TextView
+            android:id="@+id/bill_source"
+            style="@style/textBillSource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付宝"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

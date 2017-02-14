@@ -3,4 +3,9 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="bar_height">48dp</dimen>
+    <dimen name="bill_name">16dp</dimen>
+    <dimen name="bill_pic">45dp</dimen>
+    <dimen name="bill_remark">12dp</dimen>
+    <dimen name="bill_count">14dp</dimen>
+    <dimen name="bill_source">13dp</dimen>
 </resources>

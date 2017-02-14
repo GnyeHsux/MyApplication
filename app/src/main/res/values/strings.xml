@@ -2,8 +2,8 @@
     <string name="app_name">MyPay</string>
     <string name="search">搜索</string>
     <string name="pay_empty">赶快添加账户吧</string>
-    <string name="alipay_empty">尚无支付宝消费记录</string>
-    <string name="wechat_empty">尚无微信支付记录</string>
+    <string name="alipay_empty">尚无微信/支付宝消费记录</string>
+    <string name="wechat_empty">尚无支付记录</string>
     <string name="pay_list">账户列表</string>
     <string name="alipay_list">支付宝</string>
     <string name="wechat_list">微信</string>

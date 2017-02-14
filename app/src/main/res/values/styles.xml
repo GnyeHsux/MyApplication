@@ -123,4 +123,24 @@
         <item name="android:paddingBottom">5dp</item>
     </style>
 
+    <!--账单列表项-->
+    <style name="textBillName">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/bill_name</item>
+    </style>
+
+    <style name="textBillRemark">
+        <item name="android:textColor">@color/colorLightBlack</item>
+        <item name="android:textSize">@dimen/bill_remark</item>
+    </style>
+
+    <style name="textBillCount">
+        <item name="android:textColor">@color/colorLightRed</item>
+        <item name="android:textSize">@dimen/bill_count</item>
+    </style>
+
+    <style name="textBillSource">
+        <item name="android:textSize">@dimen/bill_source</item>
+    </style>
+
 </resources>

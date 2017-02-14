@@ -6,7 +6,9 @@ import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.DrawableRes;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -45,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
     TabLayout mTabLayout;
     @BindView(R.id.fab)
     FloatingActionButton mFab;
+    @BindView(R.id.main_content)
+    CoordinatorLayout mainContent;
 
     private ViewPagerAdapter mViewPagerAdapter;
     private ArrayList<String> mSearchHistory;
@@ -75,10 +79,25 @@ public class MainActivity extends AppCompatActivity {
                                 getThemeAccentColor(MainActivity.this)
                         )
                 );
-                if (tab.getPosition() != 0) {
+                if (tab.getPosition() == 1 || tab.getPosition() == 2) {
+                    mFab.setVisibility(View.VISIBLE);
+                    mFab.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Snackbar.make(v, "other", Snackbar.LENGTH_SHORT).show();
+//                            startActivity(new Intent(MainActivity.this, CreateAccountCardActivity.class));
+                        }
+                    });
+                } else if (tab.getPosition() == 3) {
                     mFab.setVisibility(View.GONE);
                 } else {
-                    mFab.setVisibility(View.VISIBLE);
+                    mFab.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            mFab.setVisibility(View.VISIBLE);
+                            startActivity(new Intent(MainActivity.this, CreateAccountCardActivity.class));
+                        }
+                    });
                 }
             }
 

@@ -48,5 +48,9 @@
     <color name="colorGrey">#D1D1D1</color>
     <color name="colorBlack">#000000</color>
 
+    <color name="colorLightBlack">#1a1818</color>
+    <color name="colorLightRed">#e4312e</color>
+    <color name="colorLightGreen">#17781f</color>
+
 
 </resources>

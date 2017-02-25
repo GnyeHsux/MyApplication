@@ -84,8 +84,8 @@ public class MainActivity extends AppCompatActivity {
                     mFab.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            Snackbar.make(v, "other", Snackbar.LENGTH_SHORT).show();
-//                            startActivity(new Intent(MainActivity.this, CreateAccountCardActivity.class));
+//                            Snackbar.make(v, "other", Snackbar.LENGTH_SHORT).show();
+                            startActivity(new Intent(MainActivity.this, CreateBillAcrtivity.class));
                         }
                     });
                 } else if (tab.getPosition() == 3) {

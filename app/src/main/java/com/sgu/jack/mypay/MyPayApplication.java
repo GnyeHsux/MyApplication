@@ -2,6 +2,7 @@ package com.sgu.jack.mypay;
 
 import android.app.Application;
 
+import com.blankj.utilcode.utils.Utils;
 import com.squareup.leakcanary.LeakCanary;
 
 /**
@@ -12,5 +13,6 @@ public class MyPayApplication extends Application {
     public void onCreate() {
         super.onCreate();
         LeakCanary.install(this);
+        Utils.init(this);
     }
 }

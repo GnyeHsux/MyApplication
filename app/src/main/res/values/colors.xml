@@ -51,6 +51,7 @@
     <color name="colorLightBlack">#1a1818</color>
     <color name="colorLightRed">#e4312e</color>
     <color name="colorLightGreen">#17781f</color>
+    <color name="colorLineGrey">#cecece</color>
 
 
 </resources>
